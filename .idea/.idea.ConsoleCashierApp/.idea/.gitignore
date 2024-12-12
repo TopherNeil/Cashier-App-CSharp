@@ -13,4 +13,6 @@
 /dataSources.local.xml
 # Debug and bin ignored directories
 /bin/
+/bin/**
 /obj/
+/obj/**
