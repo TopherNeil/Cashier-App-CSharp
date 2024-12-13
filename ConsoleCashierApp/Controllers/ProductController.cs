@@ -32,8 +32,6 @@ public class ProductController
             }
         }
     }
-    
-    
     public static void Store()
     {
         Console.WriteLine("How many entries would you like to enter?");
