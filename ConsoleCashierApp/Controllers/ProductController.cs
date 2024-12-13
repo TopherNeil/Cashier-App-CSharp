@@ -37,5 +37,18 @@ public class ProductController
         Console.WriteLine("How many entries would you like to enter?");
         var numberOfEntries = Int32.Parse(Console.ReadLine());
         
+        for (var i = 0; i < numberOfEntries; i++)
+        {
+            Console.WriteLine("---------------------------------------------");
+            Console.WriteLine($"Entry number: {i + 1}");
+            EntriesInput(i);
+        }
+        
+        // Write into the CSV file
+        using (var writer = new StreamWriter("C:\\Users\\Chon\\RiderProjects\\Cashier-App-CSharp\\ConsoleCashierApp\\CSVFiles\\Products.csv"))
+        using (var csv = new CsvWriter(writer, CultureInfo.InvariantCulture))
+        {
+                csv.WriteRecords(newRecords);
+        }
     }
 }
