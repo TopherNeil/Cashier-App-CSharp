@@ -17,13 +17,21 @@ public class ProductController
             var records = csv.GetRecords<Product>().ToList();
             if (records.Count != 0)
             {
-                product.Name,
-                product.NumberOfStock,
-                product.Price
-            };
-        foreach (var product in query)
-        {
-            Console.WriteLine($"Product Name: {product.Name}\nNumber of stock: {product.NumberOfStock}\nPrice: {product.Price}");
+                foreach (var product in records.Select((value, i) => (value, i)))
+                {
+                    var value = product.value;
+                    Console.WriteLine("-----------------------------");
+                    Console.WriteLine($"Product Id: {product.i}");
+                    Console.WriteLine($"Name: {value.Name}");
+                    Console.WriteLine($"Price: {value.Price}");
+                    Console.WriteLine($"Number of stock: {value.NumberOfStock}");
+                    Console.WriteLine("-----------------------------");
+                }
+            }
+            else
+            {
+                Console.WriteLine("No records found.");
+            }
         }
     }
     
