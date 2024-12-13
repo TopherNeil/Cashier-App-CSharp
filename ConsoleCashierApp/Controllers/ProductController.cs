@@ -34,6 +34,8 @@ public class ProductController
     
     public static void Store()
     {
+        Console.WriteLine("How many entries would you like to enter?");
+        var numberOfEntries = Int32.Parse(Console.ReadLine());
         
     }
 }
