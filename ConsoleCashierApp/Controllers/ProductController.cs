@@ -11,10 +11,11 @@ public class ProductController
 
     public static void Index()
     {
-        Console.WriteLine("To print the result for the sample product data: ");
-        var query = from product in SampleProductData
-            where product.Name == "Choco Mucho"
-            select new
+        using (var reader = new StreamReader("C:\\Users\\Chon\\RiderProjects\\Cashier-App-CSharp\\ConsoleCashierApp\\CSVFiles\\Products.csv"))
+        using (var csv = new CsvReader(reader, CultureInfo.InvariantCulture))
+        {
+            var records = csv.GetRecords<Product>().ToList();
+            if (records.Count != 0)
             {
                 product.Name,
                 product.NumberOfStock,
