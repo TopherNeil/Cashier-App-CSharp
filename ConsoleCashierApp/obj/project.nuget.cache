@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "SD0XyzCVhYM=",
+  "dgSpecHash": "dUkE7dBiG+4=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Chon\\RiderProjects\\ConsoleCashierApp\\ConsoleCashierApp\\ConsoleCashierApp.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\Chon\\RiderProjects\\Cashier-App-CSharp\\ConsoleCashierApp\\ConsoleCashierApp.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Chon\\.nuget\\packages\\csvhelper\\33.0.1\\csvhelper.33.0.1.nupkg.sha512"
+  ],
   "logs": []
 }

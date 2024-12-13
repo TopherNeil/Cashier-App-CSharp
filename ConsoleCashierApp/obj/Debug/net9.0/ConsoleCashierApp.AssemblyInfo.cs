@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ConsoleCashierApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fad04f2135516f18f7f920d6b60071791c905dec")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+90b239bd074524facca2ad248743aef13eecbc1e")]
 [assembly: System.Reflection.AssemblyProductAttribute("ConsoleCashierApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ConsoleCashierApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

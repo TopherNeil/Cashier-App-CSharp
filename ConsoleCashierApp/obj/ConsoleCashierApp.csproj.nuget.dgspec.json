@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Chon\\RiderProjects\\ConsoleCashierApp\\ConsoleCashierApp\\ConsoleCashierApp.csproj": {}
+    "C:\\Users\\Chon\\RiderProjects\\Cashier-App-CSharp\\ConsoleCashierApp\\ConsoleCashierApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Chon\\RiderProjects\\ConsoleCashierApp\\ConsoleCashierApp\\ConsoleCashierApp.csproj": {
+    "C:\\Users\\Chon\\RiderProjects\\Cashier-App-CSharp\\ConsoleCashierApp\\ConsoleCashierApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Chon\\RiderProjects\\ConsoleCashierApp\\ConsoleCashierApp\\ConsoleCashierApp.csproj",
+        "projectUniqueName": "C:\\Users\\Chon\\RiderProjects\\Cashier-App-CSharp\\ConsoleCashierApp\\ConsoleCashierApp.csproj",
         "projectName": "ConsoleCashierApp",
-        "projectPath": "C:\\Users\\Chon\\RiderProjects\\ConsoleCashierApp\\ConsoleCashierApp\\ConsoleCashierApp.csproj",
+        "projectPath": "C:\\Users\\Chon\\RiderProjects\\Cashier-App-CSharp\\ConsoleCashierApp\\ConsoleCashierApp.csproj",
         "packagesPath": "C:\\Users\\Chon\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Chon\\RiderProjects\\ConsoleCashierApp\\ConsoleCashierApp\\obj\\",
+        "outputPath": "C:\\Users\\Chon\\RiderProjects\\Cashier-App-CSharp\\ConsoleCashierApp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Chon\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -43,6 +43,12 @@
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
+          "dependencies": {
+            "CsvHelper": {
+              "target": "Package",
+              "version": "[33.0.1, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
