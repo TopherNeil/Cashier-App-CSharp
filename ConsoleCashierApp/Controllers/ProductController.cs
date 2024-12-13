@@ -51,4 +51,18 @@ public class ProductController
                 csv.WriteRecords(newRecords);
         }
     }
+    
+    private static List<Product> EntriesInput(int Id)
+    {
+        Console.Write("Enter Name: ");
+        var name = Console.ReadLine();
+        Console.Write("Enter Price: ");
+        var price = Double.Parse(Console.ReadLine());
+        Console.Write("Enter number of stock: ");
+        var numberOfStock = Int32.Parse(Console.ReadLine());
+        
+        newRecords.Add(new Product(){Id = Id, Name = name, Price = price, NumberOfStock = numberOfStock});
+        return newRecords;
+    }
+    
 }
