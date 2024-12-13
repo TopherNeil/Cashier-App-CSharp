@@ -4,11 +4,7 @@ namespace ConsoleCashierApp.Controllers;
 
 public class ProductController
 {
-    private static List<Product> SampleProductData = new List<Product>()
-    {
-        new Product() { Id = 1, Name = "Choco Mucho", NumberOfStock = 0, Price = 200.00 }
-    };
-
+    private static List<Product> newRecords = new List<Product>(){};
     public static void Index()
     {
         using (var reader = new StreamReader("C:\\Users\\Chon\\RiderProjects\\Cashier-App-CSharp\\ConsoleCashierApp\\CSVFiles\\Products.csv"))
